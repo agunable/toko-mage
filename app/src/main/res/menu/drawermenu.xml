@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/beranda" android:title="@string/beranda" android:icon="@drawable/beranda"/>
+    <item android:id="@+id/kotak" android:title="@string/kotak_masuk" android:icon="@drawable/kotak"/>
+    <item android:id="@+id/pembelian" android:title="@string/pembelian" android:icon="@drawable/penjualan"/>
+    <item android:id="@+id/penjualan" android:title="@string/penjualan" android:icon="@drawable/pembelian"/>
+    <item android:id="@+id/settings" android:title="@string/settings" android:icon="@drawable/settings"/>
+    <item android:id="@+id/logout" android:title="@string/logout" android:icon="@drawable/logout"/>
+
+</menu>
