@@ -34,13 +34,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         loginButton = (Button)findViewById(R.id.loginButton);
-        layoutAtas = (LinearLayout)findViewById(R.id.layoutAtas);
-        layoutBawah = (LinearLayout)findViewById(R.id.layoutBawah);
-        uptodown = AnimationUtils.loadAnimation(this, R.anim.uptodown);
-        downtoup = AnimationUtils.loadAnimation(this, R.anim.downtoup);
+        //layoutAtas = (LinearLayout)findViewById(R.id.layoutAtas);
+        //layoutBawah = (LinearLayout)findViewById(R.id.layoutBawah);
+        //uptodown = AnimationUtils.loadAnimation(this, R.anim.uptodown);
+        //downtoup = AnimationUtils.loadAnimation(this, R.anim.downtoup);
         etId = (EditText)findViewById(R.id.etId);
-        layoutBawah.setAnimation(downtoup);
-        layoutAtas.setAnimation(uptodown);
+        //layoutBawah.setAnimation(downtoup);
+        //layoutAtas.setAnimation(uptodown);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override

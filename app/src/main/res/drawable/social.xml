@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
+
     <item android:state_pressed="true" >
         <shape>
-            <corners android:radius="25dp"></corners>
-            <solid android:color="@color/birutokoteken"/>
+            <corners android:radius="500dp"></corners>
+            <solid android:color="@color/something"/>
             <padding android:top="15dp" android:right="15dp" android:left="15dp" android:bottom="15dp"/>
         </shape>
     </item>
     <item>
         <shape>
-            <corners android:radius="25dp"></corners>
-            <solid android:color="@color/birutoko"/>
+            <corners android:radius="500dp"></corners>
+            <solid android:color="@color/social"/>
             <padding android:top="15dp" android:right="15dp" android:left="15dp" android:bottom="15dp"/>
         </shape>
     </item>

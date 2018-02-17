@@ -1,57 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.gunglaksman.mage.MainActivity"
     android:orientation="vertical"
-    android:background="@drawable/background">
-    <LinearLayout
-        android:layout_above="@id/layoutBawah"
-        android:id="@+id/layoutAtas"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        <ImageView
-            android:src="@drawable/logo3"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:layout_gravity="center"
-            android:textStyle="bold"/>
+    android:background="@color/something">
 
-        <EditText
-            android:textColor="@color/lighorangedark"
-            android:id="@+id/etId"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:layout_gravity="center"
-            android:gravity="center_horizontal|center_vertical"
-            android:ems="8"
-            android:hint="Your ID"
-            android:backgroundTint="@color/lighorangedark"
-            android:inputType="textPersonName" />
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/layoutBawah"
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:src="@drawable/logobaru"
+        android:layout_gravity="center"
+        />
+
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:orientation="vertical"
-        android:background="@drawable/spaceullustration">
+        android:layout_weight="0"
+        android:id="@+id/etId"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="Your ID"
+        android:textColor="@color/birutoko"
+        android:backgroundTint="@color/birutoko"
+        android:layout_marginBottom="20dp"
+        android:ems="8"
+        android:inputType="textPersonName"
+        />
 
-        <Button
-            android:id="@+id/loginButton"
-            android:layout_marginTop="30sp"
-            android:layout_width="wrap_content"
+    <Button
+
+        android:id="@+id/loginButton"
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@drawable/buttonstyle"
+        android:text="Login"
+        android:textColor="@color/something"
+        android:layout_gravity="center"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:layout_weight="0"
+        android:text="or sign in with:"
+        android:textColor="@color/birutoko"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+
+        >
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/social"
+            android:elevation="8dp"
+            android:src="@drawable/ic_facebook_logo"
+            android:tint="@color/birutoko"
+            />
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="20dp"
+            android:elevation="8dp"
+            android:background="@drawable/social"
+            android:src="@drawable/ic_google_logo"
+            android:tint="@color/birutoko"
+            />
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/social"
+            android:layout_marginRight="10dp"
+            android:elevation="8dp"
+            android:src="@drawable/ic_twitter"
+            android:tint="@color/birutoko"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="LOGIN"
-            android:background="@drawable/buttonstyle"/>
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Don't Have an ID ?"
+            android:textColor="@color/birutoko"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+
+            android:gravity="right"
+            android:text="I Forgot My ID"
+            android:textColor="@color/birutoko"
+            android:textStyle="bold" />
     </LinearLayout>
 
 
-</RelativeLayout>
+
+</LinearLayout>
